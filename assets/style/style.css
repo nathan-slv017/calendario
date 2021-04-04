@@ -1,6 +1,9 @@
 *{
     font-family: sans-serif;
 }
+h4{
+    margin-bottom: 5px;
+}
 .inicio{
     width: 900px;
     margin: 40px auto;
@@ -9,17 +12,33 @@
 .calendario{
     width: 1300px;
     text-align: center;
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto ;
+    justify-content: center;
 }
 .mes{
-    display: inline-block;
     width: 280px;
     margin: 20px;
-    height: 200px;
-    background-color: gray;
+    height: 250px;
+    border-style: solid;
+    border-radius: 4px;
 }
+
 .semana{
+    display: grid;
     width: 280px;
     height: 142px;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto ;
+    grid-row-gap:-5px;
+    grid-column-gap:2px;
+    font-size: 14px;
+}
+.semana p {
+    
+    display: inline-block;
+    margin: 10px 0;
 }
 .diaS{
     display: inline-block;
